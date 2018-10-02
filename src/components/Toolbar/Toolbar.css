@@ -1,0 +1,50 @@
+.Toolbar{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.ToolbarLogo{
+    font-size: 30px;
+}
+.Navigation{
+    display: flex;
+    align-items: center;
+}
+.Spacer{
+    flex: 1;
+}
+.Toolbar a {
+    color: white;
+    text-decoration: none;
+}
+.NavigationItems a:hover{
+    color: red;
+}
+.NavigationItems a:active{
+    color: green;
+}
+
+.NavigationItems ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Navigation li{
+    padding: 0 10px;
+}
+
+@media(max-width: 768px){
+    .NavigationItems{
+        display: none;
+    }
+}
+
+@media(min-width: 769px){
+    .drawer{
+        display: none;
+    }
+}
